@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Watermarks</title>
+</head>
+<body>
+    <form action="{{ url_for('upload_images') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" value="Загрузить 1 изображение">
+        <input type="file" name="watermark" value="Загрузить 2 изображение">
+        <input type='submit' value='Загрузить'>
+    </form>
+</body>
+</html>
